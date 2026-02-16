@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Git clone the repository
         uses: actions/checkout@v5
+        run: echo "Cloned successfully"
 
       - name: Configure aws credentials
         uses: aws-actions/configure-aws-credentials@v6.0.0
@@ -19,3 +20,12 @@ jobs:
           aws-region: us-east-1
           role-to-assume: arn:aws:iam::731176811050:role/Github-AWS-Integration
           role-session-name: MySessionName
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan
