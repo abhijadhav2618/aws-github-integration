@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Git clone the repository
         uses: actions/checkout@v5
+      
+      - name: Verify clone
         run: echo "Cloned successfully"
 
       - name: Configure aws credentials
