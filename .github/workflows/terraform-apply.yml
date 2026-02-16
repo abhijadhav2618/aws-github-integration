@@ -8,7 +8,7 @@ jobs:
   terraform-apply:
     runs-on: ubuntu-latest
     steps:
-      - name: git checkout
+      - name: git checkoutt
         uses: actions/checkout@v5
 
       - name: configure aws credentials by web identity
