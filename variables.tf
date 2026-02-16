@@ -2,6 +2,7 @@ variable "region" {
   default = "The name of the regions"
 }
 
-variable "cidr_range" {
+variable "vpc_cidr_range" {
     default = "This is the cidr ranges"
 }
+
