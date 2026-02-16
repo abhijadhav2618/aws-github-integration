@@ -3,5 +3,5 @@ variable "region" {
 }
 
 variable "cidr_range" {
-    default = "This is the cidr range"
+    default = "This is the cidr ranges"
 }
