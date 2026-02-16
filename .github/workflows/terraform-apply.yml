@@ -3,7 +3,7 @@ on:
   push:
     branches: 
       - main
-      
+
 permissions:
   id-token: write
   contents: read 
@@ -12,7 +12,7 @@ jobs:
   terraform-apply:
     runs-on: ubuntu-latest
     steps:
-      - name: git checkoutt
+      - name: git checkout
         uses: actions/checkout@v5
 
       - name: configure aws credentials by web identity
