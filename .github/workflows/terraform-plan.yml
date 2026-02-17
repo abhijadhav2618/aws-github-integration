@@ -29,5 +29,8 @@ jobs:
       - name: Terraform Initt
         run: terraform init
 
+      - name: Terraform Validate
+        run: terraform Validate
+
       - name: Terraform destroyy
         run: terraform destroy -auto-approve
