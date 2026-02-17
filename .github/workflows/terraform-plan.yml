@@ -30,7 +30,7 @@ jobs:
         run: terraform init
 
       - name: Terraform Validate
-        run: terraform Validate
+        run: terraform validate
 
       - name: Terraform destroyy
         run: terraform destroy -auto-approve
