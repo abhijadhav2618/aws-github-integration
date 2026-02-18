@@ -1,7 +1,7 @@
 name: terraform/apply
 on:
   push:
-    branches: 
+    branches:
       - main
 
 permissions:

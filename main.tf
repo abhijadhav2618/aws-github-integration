@@ -57,9 +57,6 @@ resource "aws_route_table_association" "public-rt-association" {
 
 resource "aws_route_table" "private-RT" {
     vpc_id = aws_vpc.vpc.id
-    route{
-        cidr_block = "0.0.0.0/0"
-    }
     tags = {
         Name = "Private-RT"
     }
